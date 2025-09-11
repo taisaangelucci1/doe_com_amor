@@ -1,1 +1,217 @@
+/* Reset de estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E3A8A; /* Azul de fundo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tela de login */
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    background-color: #1E3A8A;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #F9A8D4; /* Cor do título */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #E4D7D7;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #F9A8D4; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #F472B6; /* Efeito de hover */
+}
+
+/* Área de navegação */
+.navbar {
+    width: 100%;
+    max-width: 360px;
+    background-color: #1E3A8A;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar ul li {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    color: #F9A8D4;
+}
+
+/* Card de produto */
+.product-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card .info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card .info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card .button {
+    padding: 12px;
+    background-color: #1E3A8A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .button:hover {
+    background-color: #F9A8D4;
+}
+
+/* Estilo da área de chat */
+.chat-box {
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chat-box .message {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-box .message p {
+    font-size: 14px;
+}
+
+.chat-box .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.chat-box .input-container input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.chat-box .input-container button {
+    width: 15%;
+    padding: 12px;
+    background-color: #1E3A8A;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+html
+Copiar código
+<div class="login-container">
+    <h1>Doe Com Amor</h1>
+    <input type="text" placeholder="Digite seu e-mail" />
+    <input type="password" placeholder="Digite sua senha" />
+    <button>Entrar</button>
+</div>
+
+<div class="navbar">
+    <ul>
+        <li>Início</li>
+        <li>Doações</li>
+        <li>Contatos</li>
+    </ul>
+</div>
+
+<div class="product-card">
+    <img src="product-image.jpg" alt="Produto" />
+    <div class="info">
+        <h3>Jaqueta Jeans</h3>
+        <p>Descrição do produto</p>
+        <button class="button">Adicionar à cesta</button>
+    </div>
+</div>
+
+<div class="chat-box">
+    <div class="message">
+        <p>Olá, como posso ajudar?</p>
+        <p>12:30</p>
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="Digite uma mensagem..." />
+        <button>Enviar</button>
+    </div>
+</div>
