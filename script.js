@@ -22,4 +22,4 @@ chatButton.addEventListener("click", () => {
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 });
-window.location.href = "home.html";
+
